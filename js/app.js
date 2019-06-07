@@ -189,7 +189,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
       cell9.textContent = "O";
     }
     ans1 = (array1.reduce((a,b) => a+b,0));
-    console.log(ans1);
+    ans2 = (array2.reduce((a,b) => a+b,0));
+    ans3 = (array3.reduce((a,b) => a+b,0));
+    ans4 = (array4.reduce((a,b) => a+b,0));
+    ans5 = (array5.reduce((a,b) => a+b,0));
+    ans6 = (array6.reduce((a,b) => a+b,0));
+    ans7 = (array7.reduce((a,b) => a+b,0));
+    ans8 = (array8.reduce((a,b) => a+b,0));
 
     gameWin();
   })
@@ -211,5 +217,37 @@ function whoseTurn() {
 function gameWin() {
   if (ans1 === 12) {
     console.log('X is the winner');
+  } else if (ans2 === 12) {
+    console.log('X is the winner');
+  } else if (ans3 === 12) {
+    console.log('X is the winner');
+  } else if (ans4 === 12) {
+    console.log('X is the winner');
+  } else if (ans5 === 12) {
+    console.log('X is the winner');
+  } else if (ans6 === 12) {
+    console.log('X is the winner');
+  } else if (ans7 === 12) {
+    console.log('X is the winner');
+  } else if (ans8 === 12) {
+    console.log('X is the winner');
+  }
+
+  if (ans1 === 3) {
+    console.log('O is the winner');
+  } else if (ans2 === 3) {
+    console.log('O is the winner');
+  } else if (ans3 === 3) {
+    console.log('O is the winner');
+  } else if (ans4 === 3) {
+    console.log('O is the winner');
+  } else if (ans5 === 3) {
+    console.log('O is the winner');
+  } else if (ans6 === 3) {
+    console.log('O is the winner');
+  } else if (ans7 === 3) {
+    console.log('O is the winner');
+  } else if (ans8 === 3) {
+    console.log('O is the winner');
   }
 }
