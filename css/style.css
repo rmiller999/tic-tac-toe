@@ -1,3 +1,85 @@
-h1 {
-  color: purple;
+body {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+      "xscore gamebox oscore"
+      "xscore gamebox oscore"
+      "xscore turnmessagebox oscore";
+}
+#gamebox {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-areas:
+      "cell1 cell2 cell3"
+      "cell4 cell5 cell6"
+      "cell7 cell8 cell9";
+  grid-area: gamebox;
+  justify-self: center;
+}
+#xscore {
+  grid-area: xscore;
+}
+#oscore {
+  grid-area: oscore;
+  justify-self: end;
+}
+#resetbutton {
+  grid-area: resetbutton;
+  width: 100px;
+  height: 50px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#turnmessagebox {
+  display: flex;
+  flex-direction: column;
+  grid-area: turnmessagebox;
+}
+#turnmessage {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+#cell1 { 
+  grid-area: cell1;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  
+}
+#cell2 { 
+  grid-area: cell2;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+#cell3 { 
+  grid-area: cell3;
+  border-bottom: 5px solid black;  
+}
+#cell4 { 
+  grid-area: cell4;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;  
+}
+#cell5 { 
+  grid-area: cell5;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;  
+}
+#cell6 { 
+  grid-area: cell6;
+  border-bottom: 5px solid black;  
+}
+#cell7 { 
+  grid-area: cell7;
+  border-right: 5px solid black;  
+}
+#cell8 { 
+  grid-area: cell8;
+  border-right: 5px solid black;  
+}
+#cell9 { 
+  grid-area: cell9;  
 }
