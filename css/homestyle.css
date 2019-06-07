@@ -1,0 +1,21 @@
+body {
+    background-image: url('../img/homepage.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 400px 400px 400px 400px;
+    text-align: center;
+    color: black;
+    padding-top: 250px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
