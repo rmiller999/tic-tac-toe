@@ -25,6 +25,8 @@ var array6 = [];
 var array7 = [];
 var array8 = [];
 
+var ans1 = 0;
+
 
 // DOM Variables
 var cell1;
@@ -60,136 +62,136 @@ document.addEventListener('DOMContentLoaded', function(e) {
   gameTable = document.getElementById('gamebox');
 
   gameTable.addEventListener('click', function(e) {
-    console.log(e.target.id)
     playerTurn ++;
-    console.log(playerTurn);
     whoseTurn();
-    gameWin();
     if (e.target.id === "cell1" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = null;
       console.log(sapcesTaken[e.target.id]);
-      array1.push([playerXValue]);
-      array4.push([playerXValue]);
-      array7.push([playerXValue]);
+      array1.push(playerXValue);
+      array4.push(playerXValue);
+      array7.push(playerXValue);
       console.log(array1);
       cell1.textContent = "X";
     } else if (e.target.id === "cell2" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array1.push([playerXValue]);
-      array5.push([playerXValue]);
+      array1.push(playerXValue);
+      array5.push(playerXValue);
       console.log(array1);
       cell2.textContent = "X";
     } else if (e.target.id === "cell3" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array1.push([playerXValue]);
-      array6.push([playerXValue]);
-      array8.push([playerXValue]);
+      array1.push(playerXValue);
+      array6.push(playerXValue);
+      array8.push(playerXValue);
       console.log(array1);
       cell3.textContent = "X";
     } else if (e.target.id === "cell4" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array2.push([playerXValue]);
-      array4.push([playerXValue]);
+      array2.push(playerXValue);
+      array4.push(playerXValue);
       console.log(array1);
       cell4.textContent = "X";
     } else if (e.target.id === "cell5" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array2.push([playerXValue]);
-      array5.push([playerXValue]);
-      array7.push([playerXValue]);
-      array8.push([playerXValue]);
+      array2.push(playerXValue);
+      array5.push(playerXValue);
+      array7.push(playerXValue);
+      array8.push(playerXValue);
       console.log(array1);
       cell5.textContent = "X";
     } else if (e.target.id === "cell6" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array2.push([playerXValue]);
-      array6.push([playerXValue]);
+      array2.push(playerXValue);
+      array6.push(playerXValue);
       console.log(array1);
       cell6.textContent = "X";
     } else if (e.target.id === "cell7" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array3.push([playerXValue]);
-      array4.push([playerXValue]);
-      array8.push([playerXValue]);
+      array3.push(playerXValue);
+      array4.push(playerXValue);
+      array8.push(playerXValue);
       console.log(array1);
       cell7.textContent = "X";
     } else if (e.target.id === "cell8" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array3.push([playerXValue]);
-      array5.push([playerXValue]);
+      array3.push(playerXValue);
+      array5.push(playerXValue);
       console.log(array1);
       cell8.textContent = "X";
     } else if (e.target.id === "cell9" && playerTurn % 2 === 0) {
       sapcesTaken[e.target.id] = true;
-      array3.push([playerXValue]);
-      array6.push([playerXValue]);
-      array7.push([playerXValue]);
+      array3.push(playerXValue);
+      array6.push(playerXValue);
+      array7.push(playerXValue);
       console.log(array1);
       cell9.textContent = "X";
     }
 
     if (e.target.id === "cell1" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array1.push([playerOValue]);
-      array4.push([playerOValue]);
-      array7.push([playerOValue]);
+      array1.push(playerOValue);
+      array4.push(playerOValue);
+      array7.push(playerOValue);
       console.log(array1);
       cell1.textContent = "O";
     } else if (e.target.id === "cell2" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array1.push([playerOValue]);
-      array5.push([playerOValue]);
+      array1.push(playerOValue);
+      array5.push(playerOValue);
       console.log(array1);
       cell2.textContent = "O";
     } else if (e.target.id === "cell3" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array1.push([playerOValue]);
-      array6.push([playerOValue]);
-      array8.push([playerOValue]);
+      array1.push(playerOValue);
+      array6.push(playerOValue);
+      array8.push(playerOValue);
       console.log(array1);
       cell3.textContent = "O";
     } else if (e.target.id === "cell4" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array2.push([playerOValue]);
-      array4.push([playerOValue]);
+      array2.push(playerOValue);
+      array4.push(playerOValue);
       console.log(array1);
       cell4.textContent = "O";
     } else if (e.target.id === "cell5" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array2.push([playerOValue]);
-      array5.push([playerOValue]);
-      array7.push([playerOValue]);
-      array8.push([playerOValue]);
+      array2.push(playerOValue);
+      array5.push(playerOValue);
+      array7.push(playerOValue);
+      array8.push(playerOValue);
       console.log(array1);
       cell5.textContent = "O";
     } else if (e.target.id === "cell6" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array2.push([playerOValue]);
-      array6.push([playerOValue]);
+      array2.push(playerOValue);
+      array6.push(playerOValue);
       console.log(array1);
       cell6.textContent = "O";
     } else if (e.target.id === "cell7" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array3.push([playerOValue]);
-      array4.push([playerOValue]);
-      array8.push([playerOValue]);
+      array3.push(playerOValue);
+      array4.push(playerOValue);
+      array8.push(playerOValue);
       console.log(array1);
       cell7.textContent = "O";
     } else if (e.target.id === "cell8" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array3.push([playerOValue]);
-      array5.push([playerOValue]);
+      array3.push(playerOValue);
+      array5.push(playerOValue);
       console.log(array1);
       cell8.textContent = "O";
     } else if (e.target.id === "cell9" && playerTurn % 2 !== 0) {
       sapcesTaken[e.target.id] = true;
-      array3.push([playerOValue]);
-      array6.push([playerOValue]);
-      array7.push([playerOValue]);
+      array3.push(playerOValue);
+      array6.push(playerOValue);
+      array7.push(playerOValue);
       console.log(array1);
       cell9.textContent = "O";
     }
-    console.log(array1.reduce((a,b) => a+b,0));
+    ans1 = (array1.reduce((a,b) => a+b,0));
+    console.log(ans1);
+
+    gameWin();
   })
 
 })
@@ -207,7 +209,7 @@ function whoseTurn() {
 }
 
 function gameWin() {
-  if (array1.toString() == '0444') {
+  if (ans1 === 12) {
     console.log('X is the winner');
   }
 }
